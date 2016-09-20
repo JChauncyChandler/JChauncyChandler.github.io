@@ -67,7 +67,36 @@
         nav li a{
             color: black;
         }
+        h1{
+            font-size: 2vw;
+        
+        }
+        h2{
+            font-size: 2vw;
+        }
+        h3{
+            font-size: 2vw;
+        }
+        h4{
+            font-size: 1.4vw;
+        }
+        p{
+            font-size: 1.1vw;
+        }
+        a{
+            font-size: 1.1vw;
+        }
+        td, th{
+            font-size: 1vw;
+        }
     </style>
+    <script>
+    causeRepaintsOn = $("h1, h2, h3, p");
+
+    $(window).resize(function () {
+        causeRepaintsOn.css("z-index", 1);
+    });
+    </script>s
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10">
     <nav class="navbar navbar navbar-fixed-top">
@@ -393,4 +422,5 @@ to benefit the fraternity.
         
     </footer>
 </body>
+
 </html>
