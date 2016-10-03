@@ -3,16 +3,11 @@
 JChauncyChandler.github.io
 ====================
 
-## Hello world!
-
-This is my first try at github!
-
-My Github user page is at: 
-https://github.com/JChauncyChandler/
-
-My Github Pages repo can be found at:  
-https://github.com/JChauncyChandler/JChauncyChandler.github.io/
-
-And, soon, you can see my customized homepage at:
-
-http://JChauncyChandler.github.io/
+This website is used as personl CV hosted at www.jacksonchandler.com.
+Technologies used are:
+<ul>
+<li>HTML5</li>
+<li>CSS3<li>
+<li>JQuery and Javascript<li/>
+<li>PHP<li/>
+</ul>
