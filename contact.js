@@ -2,7 +2,7 @@ $(function () {
 
             $('#contact-form').validator();
 
-            $('#contact-form').on('submit', function (e) {
+            $('#contact-form').on('button1', function (e) {
                 if (!e.isDefaultPrevented()) {
                     var url = "contact.php";
 

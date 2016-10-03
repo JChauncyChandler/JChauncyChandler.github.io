@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jackson Chandler</title>
-   <!--<script>
+   <script>
         if (window.location.protocol != "https:")
             window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    </script>-->
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,6 +21,16 @@
     <!-- Latest compiled and minified Locales -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        window.onload = function() {
+             document.getElementById("button1").disabled = true;
+            };
+       
+        
+         function enableBtn(){
+            document.getElementById("button1").disabled = false;
+           }
+    </script>
     <style>
         .container{
             margin-top: 5%;
@@ -74,28 +84,7 @@
         nav li a{
             color: black;
         }
-       /* h1{
-            font-size: 2vw;
-        
-        }
-        h2{
-            font-size: 2vw;
-        }
-        h3{
-            font-size: 2vw;
-        }
-        h4{
-            font-size: 1.4vw;
-        }
-        p{
-            font-size: 1.1vw;
-        }
-        a{
-            font-size: 1.1vw;
-        }
-        td, th{
-            font-size: 1vw;
-        }*/
+      
     </style>
     <script>
         causeRepaintsOn = $("h1, h2, h3, p");
@@ -306,9 +295,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LdKAAgUAAAAAHGIINRmLnFwWcUTps1MseFkStsT" data-callback="enableBtn"></div>
                                     <br/>
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    <input type="button" class="btn btn-success btn-send" value="Send message" id="button1">
                                 </div>
                             </div>
                             <div class="row">
