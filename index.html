@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jackson Chandler</title>
-    <script>
+  <!--  <script>
         if (window.location.protocol != "https:")
             window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-    </script>
+    </script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -30,7 +30,7 @@
             padding: 15px;
             opacity: 0.9;
         }
-        .programLanguages{
+        .programLanguages, .Contact{
             margin-top: 25px;
              background-color: whitesmoke;
             box-shadow: 1px 1px 4px black;
@@ -73,7 +73,7 @@
         nav li a{
             color: black;
         }
-        h1{
+       /* h1{
             font-size: 2vw;
         
         }
@@ -94,15 +94,17 @@
         }
         td, th{
             font-size: 1vw;
-        }
+        }*/
     </style>
     <script>
-    causeRepaintsOn = $("h1, h2, h3, p");
+        causeRepaintsOn = $("h1, h2, h3, p");
 
-    $(window).resize(function () {
-        causeRepaintsOn.css("z-index", 1);
-    });
-    </script>s
+        $(window).resize(function () {
+            causeRepaintsOn.css("z-index", 1);
+        });
+        
+        
+    </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10">
     <nav class="navbar navbar navbar-fixed-top">
@@ -118,9 +120,10 @@
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#section1">Education</a></li>
-                        <li><a href="#section2">Experience</a></li>
-                        <li><a href="#section3">Organizations</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#Organizations">Organizations</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -253,12 +256,73 @@
                         </table>
                     </div>
                 </div>
+                <div class="Contact">
+                    <h2>Contact</h2>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
         </div>
             <div class="col-md-7">
                 <div class="jumbotron">
                     <div class="row">
                         <div class="row">
-                            <div id="section1" class="educationTab">
+                            <div id="Education" class="educationTab">
                                 <h1>Education</h1>
                             </div>
                             <div class="tigerLine">
@@ -276,7 +340,7 @@ software development.
                     </div>
                     <div class="row">
                         <div class="row">
-                            <div id="section2" class="experienceTab">
+                            <div id="Experience" class="experienceTab">
                                 <h1>Experience</h1>
                                 <div class="tigerLine">
 
@@ -288,13 +352,13 @@ software development.
                         <h2>iOS Developer Intern</h2>
                         <h2>Missouri Employers Mutual</h2>
                         <p>
-                            Used Swift to make native iPhone and iPad apps to be used internally and externally, and establish the company's first ever mobile app development program.
+                            Used Swift to produce native IPhone and iPad apps to be used internally and externally. Established MeM’s first ever mobile app development program.
                         </p>
                     </div>
                     <div class="row">
                         <h2>TSS Student</h2>
                         <h2>University of Missouri</h2>
-                        <p>Assisted technicians with support tickets and installation of computers.</p>
+                        <p>Assisted technicians with support tickets and installation of hardware. Worked directly with customers in a result driven environment.</p>
                     </div>
                     <div class="row">
                         <h2>Salesforce Developer Intern</h2>
@@ -304,7 +368,7 @@ Agile environment.</p>
                     </div>
                     <div class="row">
                         <div class="row">
-                            <div id="section3" class="organizationsTab">
+                            <div id="Organizations" class="organizationsTab">
                                 <h1>Organizations</h1>
                                 <div class="tigerLine">
 
@@ -334,13 +398,13 @@ Agile environment.</p>
                                         </tr>
                                         <tr>
                                             <td>Application Development Lead</td>
-                                            <td> Lead a small group to innovate and create applications
+                                            <td>Lead a small group to innovate and create applications
 to benefit the fraternity.
 </td>
                                         </tr>
                                         <tr>
                                             <td>New Member Educator</td>
-                                            <td> Lead the education and transition of new members to brothers.
+                                            <td>Lead the education and transition of new members to brothers.
 </td>
                                         </tr>
                                         <tr>
@@ -366,7 +430,7 @@ to benefit the fraternity.
                                     <tbody>
                                         <tr>
                                             <td>Secretary</td>
-                                            <td>Keep detailed records of every meeting.</td>
+                                            <td>Keep detailed records of every meeting and made sure minutes were delivered in a timely matter. Helped run meetings in accordance with Robert's Rules of Order.</td>
                                         </tr>
                                     </tbody>
                                 </table>
