@@ -4,6 +4,7 @@ JChauncyChandler.github.io
 ====================
 
 This website is used as personl CV hosted at www.jacksonchandler.com.
+<br/>
 Technologies used are:
 <ul>
 <li>HTML5</li>
